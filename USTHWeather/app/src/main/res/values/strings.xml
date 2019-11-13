@@ -1,6 +1,24 @@
 <resources>
     <string name="app_name">USTH Weather</string>
     <string name="Mon">Mon</string>
-    <string name="info">PartlyCloudy</string>
-    <string name="tempurature">28C-31C</string>
+    <string name="Tue">Tue</string>
+    <string name="Wed">Wed</string>
+    <string name="Thu">Thu</string>
+    <string name="Fri">Fri</string>
+    <string name="Sat">Sat</string>
+    <string name="Sun">Sun</string>
+    <string name="info1">Shower</string>
+    <string name="info2">Sunny</string>
+    <string name="info3">Thunderstorm</string>
+    <string name="info4">PartlyCloudy</string>
+    <string name="info5">PartlyCloudy</string>
+    <string name="info6">Sunny</string>
+    <string name="info7">ThunderStorm</string>
+    <string name="tempurature1">28C-31C</string>
+    <string name="tempurature2">30C-35C</string>
+    <string name="tempurature3">14C-20C</string>
+    <string name="tempurature4">29C-31C</string>
+    <string name="tempurature5">25C-30C</string>
+    <string name="tempurature6">29C-38C</string>
+    <string name="tempurature7">10C-15C</string>
 </resources>
