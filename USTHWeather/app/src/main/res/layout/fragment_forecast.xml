@@ -12,7 +12,6 @@
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/holo_blue_bright"
         android:orientation="horizontal">
 
         <TextView
@@ -28,13 +27,13 @@
             android:id="@+id/Imageview"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_weight="3"
+            android:layout_weight="1"
             android:src="@drawable/cloud" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="6"
+            android:layout_weight="3"
             android:orientation="vertical">
 
             <TextView
@@ -56,10 +55,10 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/holo_blue_bright"
+        android:layout_weight="1"
+
         android:orientation="horizontal">
 
         <TextView
@@ -73,13 +72,13 @@
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_weight="3"
+            android:layout_weight="1"
             android:src="@drawable/cloud" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="6"
+            android:layout_weight="3"
             android:orientation="vertical">
 
             <TextView
@@ -103,11 +102,11 @@
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/holo_blue_bright"
+
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/Wed"
@@ -117,13 +116,13 @@
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_weight="3"
+            android:layout_weight="1"
             android:src="@drawable/cloud" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="6"
+            android:layout_weight="3"
             android:orientation="vertical">
 
             <TextView
@@ -146,11 +145,11 @@
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/holo_blue_bright"
+
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/Thu"
@@ -160,13 +159,13 @@
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_weight="3"
+            android:layout_weight="1"
             android:src="@drawable/cloud" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="6"
+            android:layout_weight="3"
             android:orientation="vertical">
 
             <TextView
@@ -189,11 +188,11 @@
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/holo_blue_bright"
+
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="62dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/Fri"
@@ -203,13 +202,13 @@
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_weight="3"
+            android:layout_weight="1"
             android:src="@drawable/cloud" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="6"
+            android:layout_weight="3"
             android:orientation="vertical">
 
             <TextView
@@ -232,11 +231,11 @@
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/holo_blue_bright"
+
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="58dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/Sat"
@@ -246,13 +245,13 @@
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_weight="3"
+            android:layout_weight="1"
             android:src="@drawable/cloud" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="6"
+            android:layout_weight="3"
             android:orientation="vertical">
 
             <TextView
@@ -275,11 +274,11 @@
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/holo_blue_bright"
+
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="72dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/Sun"
@@ -289,13 +288,13 @@
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_weight="3"
+            android:layout_weight="1"
             android:src="@drawable/cloud" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="6"
+            android:layout_weight="3"
             android:orientation="vertical">
 
             <TextView
