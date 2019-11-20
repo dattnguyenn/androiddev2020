@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">USTH Weather</string>
+    <string name="Mon">Thứ 2</string>
+    <string name="Tue">Thứ 3</string>
+    <string name="Wed">Thứ 4</string>
+    <string name="Thu">Thứ 45</string>
+    <string name="Sat">Thứ 7</string>
+    <string name="Sun">Chủ Nhật</string>
+    <string name="info1">Mưa tầm tã</string>
+    <string name="info2">Nắng</string>
+    <string name="info3">Bão</string>
+    <string name="info4">Mây</string>
+    <string name="info5">Mây</string>
+    <string name="info6">Nắng</string>
+    <string name="info7">Bão</string>
+    <string name="tempurature1">28C-31C</string>
+    <string name="tempurature2">30C-35C</string>
+    <string name="tempurature3">14C-20C</string>
+    <string name="tempurature4">29C-31C</string>
+    <string name="tempurature5">25C-30C</string>
+    <string name="tempurature6">29C-38C</string>
+    <string name="tempurature7">10C-15C</string>
+    <string name="Fri">Thứ 6</string>
+</resources>
