@@ -3,6 +3,7 @@ package vn.edu.usth.weather;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -23,6 +24,8 @@ public class WeatherActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.weatherForecastViewPager);
         adapter = new Adapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
+        MediaPlayer mediaPlayer = MediaPlayer.create(WeatherActivity.this,R.raw.thememusic);
+        mediaPlayer.start();
 
 //        forecast_fragment forecastFragment = new forecast_fragment();
 //        getSupportFragmentManager().beginTransaction().add(R.id.fragment2, forecastFragment).commit();
