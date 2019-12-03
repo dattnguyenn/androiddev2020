@@ -22,4 +22,7 @@
     <string name="tempurature6">29C-38C</string>
     <string name="tempurature7">10C-15C</string>
     <string name="Fri">Thứ 6</string>
+    <string name="search_button">nut</string>
+    <string name="refresh_button">Làm tươi</string>
+    <string name="setting_button">Cài đặt</string>
 </resources>

@@ -21,4 +21,8 @@
     <string name="tempurature5">25C-30C</string>
     <string name="tempurature6">29C-38C</string>
     <string name="tempurature7">10C-15C</string>
+    <string name="search_button">button</string>
+    <string name="refresh_button">Refresh</string>
+    <string name="setting_button">Setting</string>
+    <string name="refresh_mess">f5</string>
 </resources>
