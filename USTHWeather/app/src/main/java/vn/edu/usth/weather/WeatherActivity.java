@@ -120,6 +120,7 @@ public class WeatherActivity extends AppCompatActivity {
                 break;
             }
             // case blocks for other MenuItems (if any)
+                //
         }
         return true;
     }
