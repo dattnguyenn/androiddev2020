@@ -8,6 +8,9 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,6 +23,15 @@ public class WeatherActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private Adapter adapter;
     private TabLayout tabLayout;
+
+
+    final Handler handler = new Handler(Looper.getMainLooper()){
+        @Override
+        public void handleMessage(@NonNull Message msg) {
+            String content = msg.getData().getString("server_response");
+            Toast.makeText(getApplicationContext(), content, Toast.LENGTH_SHORT).show();
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,11 +50,7 @@ public class WeatherActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-//        forecast_fragment forecastFragment = new forecast_fragment();
-//        getSupportFragmentManager().beginTransaction().add(R.id.fragment2, forecastFragment).commit();
-//
-//        WeatherFragment weatherFragment = new WeatherFragment();
-//        getSupportFragmentManager().beginTransaction().add(R.id.weatherFragment, weatherFragment).commit();
+
     }
 
     @Override
@@ -61,6 +69,25 @@ public class WeatherActivity extends AppCompatActivity {
             }
             case R.id.action_refresh: {
                 Toast.makeText(getApplicationContext(), R.string.refresh_mess, Toast.LENGTH_LONG).show();
+                Thread thread = new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try{
+                            Thread.sleep(5000);
+                        }
+                        catch (InterruptedException e){
+                            e.printStackTrace();
+                        }
+                        //assume we got our data from server
+                        Bundle bundle = new Bundle();
+                        bundle.putString("server_response", "some sample json here");
+                        //notify main thread
+                        Message message = new Message();
+                        message.setData(bundle);
+                        handler.sendMessage(message);
+                    }
+                });
+                thread.start();
                 break;
             }
             // case blocks for other MenuItems (if any)
