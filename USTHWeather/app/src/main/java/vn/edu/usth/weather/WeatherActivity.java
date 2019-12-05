@@ -7,6 +7,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -69,25 +70,53 @@ public class WeatherActivity extends AppCompatActivity {
             }
             case R.id.action_refresh: {
                 Toast.makeText(getApplicationContext(), R.string.refresh_mess, Toast.LENGTH_LONG).show();
-                Thread thread = new Thread(new Runnable() {
+//                Thread thread = new Thread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        try{
+//                            Thread.sleep(5000);
+//                        }
+//                        catch (InterruptedException e){
+//                            e.printStackTrace();
+//                        }
+//                        //assume we got our data from server
+//                        Bundle bundle = new Bundle();
+//                        bundle.putString("server_response", "some sample json here");
+//                        //notify main thread
+//                        Message message = new Message();
+//                        message.setData(bundle);
+//                        handler.sendMessage(message);
+//                    }
+//                });
+//                thread.start();
+                AsyncTask<String, Integer, String> task = new AsyncTask<String, Integer, String>() {
                     @Override
-                    public void run() {
+                    protected void onPreExecute() {
+                        super.onPreExecute();
+                    }
+
+                    @Override
+                    protected String doInBackground(String... strings) {
                         try{
                             Thread.sleep(5000);
-                        }
-                        catch (InterruptedException e){
+                        } catch (InterruptedException e){
                             e.printStackTrace();
                         }
-                        //assume we got our data from server
-                        Bundle bundle = new Bundle();
-                        bundle.putString("server_response", "some sample json here");
-                        //notify main thread
-                        Message message = new Message();
-                        message.setData(bundle);
-                        handler.sendMessage(message);
+                        return "some sample json here";
                     }
-                });
-                thread.start();
+
+                    @Override
+                    protected void onProgressUpdate(Integer... values) {
+                        super.onProgressUpdate(values);
+                    }
+
+                    @Override
+                    protected void onPostExecute(String s) {
+                        Toast.makeText(getApplicationContext(), s, Toast.LENGTH_SHORT).show();
+                    }
+
+                };
+                task.execute("https://wallpapercave.com/wp/wp4022722.jpg");
                 break;
             }
             // case blocks for other MenuItems (if any)
